@@ -81,10 +81,12 @@ int main(int ac, char** av) {
 	else if (ac == 5) {
 		std::string dimension = (*(av + 4));
 	}
-	if ((dimension == "C1337") || (dimension == "Z286")) {
+	if ((dimension == "C137") || (dimension == "Z286")) {
 		if (ac == 4) {
 			int start = atoi(*(av + 1));
 			int stop = atoi(*(av + 2));
+			std::cout << "Morty " << dimension << " says:";
+			std::cout << std::endl;
 			Morty(start, stop, dimension);
 		}
 		else {
