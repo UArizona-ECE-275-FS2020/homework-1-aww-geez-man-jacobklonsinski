@@ -90,13 +90,13 @@ int main(int ac, char** av) {
 			Morty(start, stop, dimension);
 		}
 		else if (ac == 5) {
-				int start = atoi(*(av + 1));
-				int stop = atoi(*(av + 2));
-				int step = atoi(*(av + 3));
-				std::cout << "Morty " << dimension << " says:";
-				std::cout << std::endl;
-				Morty(start, stop, step, dimension);
-			}
+			int start = atoi(*(av + 1));
+			int stop = atoi(*(av + 2));
+			int step = atoi(*(av + 3));
+			std::cout << "Morty " << dimension << " says:";
+			std::cout << std::endl;
+			Morty(start, stop, step, dimension);
+		}
 		else {
 			std::cout << "ERROR: Unknown dimension!!" << std::endl;
 		}
@@ -109,5 +109,3 @@ int main(int ac, char** av) {
 
 	return 0;
 }
-
-
