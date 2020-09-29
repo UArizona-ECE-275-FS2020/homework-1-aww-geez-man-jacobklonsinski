@@ -58,7 +58,6 @@ void Morty(int x, int y, std::string dim) {
 
 }
 
-
 int main(int ac, char** av) {
 	// Parse the command line arguments. The program is executed as
 	// ./AwwGeezMan {start} {stop} {dimension}
