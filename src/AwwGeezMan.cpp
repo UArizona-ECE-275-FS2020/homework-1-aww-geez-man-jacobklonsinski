@@ -24,11 +24,11 @@ exists a Morty who says everything backwards.
 #include <iostream>
 #include <stdlib.h>
 
-void Morty(int a, int b, int c, std::string dim) {
+void Morty(int x, int y, int z, std::string dim) {
 	
-	int i;
+	int i = x;
 
-	for (i = a; i <= b; i += c) {
+	for (i; i <= y; i += z) {
 		std::cout << i << ": ";
 		if (dim == "C137") {
 			C137::words(i);
@@ -41,11 +41,11 @@ void Morty(int a, int b, int c, std::string dim) {
 
 }
 
-void Morty(int a, int b, std::string dim) {
+void Morty(int x, int y, std::string dim) {
 
-	int i;
+	int i = x;
 	
-	for (i = a; i <= b; i++) {
+	for (i; i <= y; i++) {
 		std::cout << i << ": ";
 		if (dim == "C137") {
 			C137::words(i);
@@ -77,7 +77,7 @@ int main(int ac, char** av) {
 	if (ac == 4) {
 		int start = atoi(*(av + 1));
 		int stop = atoi(*(av + 2));
-		std::string dimension = *av + 3;
+		std::string dimension = (*(av + 3));
 		Morty(start, stop, dimension);
 	}
 	else {
@@ -85,7 +85,7 @@ int main(int ac, char** av) {
 			int start = atoi(*(av + 1));
 			int stop = atoi(*(av + 2));
 			int step = atoi(*(av + 3));
-			std::string dimension = *av + 4;
+			std::string dimension = (*(av + 4));
 			Morty(start, stop, step, dimension);
 		}
 	}
@@ -97,4 +97,3 @@ int main(int ac, char** av) {
 
 	return 0;
 }
-
