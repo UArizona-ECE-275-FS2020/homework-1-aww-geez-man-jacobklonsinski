@@ -98,6 +98,5 @@ int main(int ac, char** av) {
 	// Depending on the dimension of the arguments, call the appropriate Morty
 	// function
 
-
 	return 0;
 }
