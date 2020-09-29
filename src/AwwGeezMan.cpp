@@ -76,10 +76,10 @@ int main(int ac, char** av) {
 	// Parse the command line arguments
 	std::string dimension;
 	if (ac == 4) {
-		std::string dimension = (*(av + 3));
+		dimension = (*(av + 3));
 	}
 	else if (ac == 5) {
-		std::string dimension = (*(av + 4));
+		dimension = (*(av + 4));
 	}
 	if ((dimension == "C137") || (dimension == "Z286")) {
 		if (ac == 4) {
@@ -89,8 +89,7 @@ int main(int ac, char** av) {
 			std::cout << std::endl;
 			Morty(start, stop, dimension);
 		}
-		else {
-			if (ac == 5) {
+		else if (ac == 5) {
 				int start = atoi(*(av + 1));
 				int stop = atoi(*(av + 2));
 				int step = atoi(*(av + 3));
@@ -98,10 +97,9 @@ int main(int ac, char** av) {
 				std::cout << std::endl;
 				Morty(start, stop, step, dimension);
 			}
+		else {
+			std::cout << "ERROR: Unknown dimension!!" << std::endl;
 		}
-	}
-	else {
-		std::cout << "ERROR: Unknown dimension!!" << std::endl;
 	}
 
 
@@ -111,3 +109,5 @@ int main(int ac, char** av) {
 
 	return 0;
 }
+
+
