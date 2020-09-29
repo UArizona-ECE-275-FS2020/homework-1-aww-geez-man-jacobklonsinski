@@ -78,6 +78,8 @@ int main(int ac, char** av) {
 		int start = atoi(*(av + 1));
 		int stop = atoi(*(av + 2));
 		std::string dimension = (*(av + 3));
+		std::cout << "Morty " << dimension << " says:";
+		std::cout << std::endl;
 		Morty(start, stop, dimension);
 	}
 	else {
@@ -86,6 +88,8 @@ int main(int ac, char** av) {
 			int stop = atoi(*(av + 2));
 			int step = atoi(*(av + 3));
 			std::string dimension = (*(av + 4));
+			std::cout << "Morty " << dimension << " says:";
+			std::cout << std::endl;
 			Morty(start, stop, step, dimension);
 		}
 	}
