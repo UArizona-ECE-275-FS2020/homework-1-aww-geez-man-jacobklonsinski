@@ -97,9 +97,10 @@ int main(int ac, char** av) {
 			std::cout << std::endl;
 			Morty(start, stop, step, dimension);
 		}
-		else {
-			std::cout << "ERROR: Unknown dimension!!" << std::endl;
-		}
+
+	}
+	else {
+		std::cout << "ERROR: Unknown dimension!!" << std::endl;
 	}
 
 
