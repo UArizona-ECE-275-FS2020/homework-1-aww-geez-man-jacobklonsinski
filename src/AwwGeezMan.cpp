@@ -102,7 +102,6 @@ int main(int ac, char** av) {
 		std::cout << "ERROR: Unknown dimension!!" << std::endl;
 	}
 
-
 	// Depending on the dimension of the arguments, call the appropriate Morty
 	// function
 
