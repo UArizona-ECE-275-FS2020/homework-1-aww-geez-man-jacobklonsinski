@@ -34,7 +34,7 @@ namespace interdimensional {
 //          Declare Namespace C137 and enclosed functions here 
 // =========================================================================== // 
 
-namespace C137{
+namespace C137 {
 
 	typedef int num;
 
