@@ -43,15 +43,21 @@ namespace C137 {
 		int b = a % 3;
 		int c = a % 5;
 		int d = a % 15;
+		int space = 0;
 
 		if (b == 0) {
-			std::cout << "Aww ";
+			std::cout << "Aww";
+			space++;
 		}
 		if (c == 0) {
-			std::cout << "Geez ";
+			if (space == 1) {
+				std::cout << " ";
+			}
+			std::cout << "Geez";
 		}
 		if (d == 0) {
-			std::cout << "Man ";
+			std::cout << " ";
+			std::cout << "Man";
 		}
 
 	}
@@ -76,11 +82,11 @@ namespace Z286 {
 		if (d == 0) {
 			std::cout << "naM zeeG wwA";
 		}
-		else if (c == 0) {
-			std::cout << "zeeG ";
-		}
 		else if (b == 0) {
-			std::cout << "naM ";
+			std::cout << "naM";
+		}
+		else if (c == 0) {
+			std::cout << "zeeG";
 		}
 
 	}
