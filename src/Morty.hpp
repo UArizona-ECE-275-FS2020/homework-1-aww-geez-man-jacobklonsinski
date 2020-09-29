@@ -73,17 +73,16 @@ namespace Z286 {
 		int c = a % 5;
 		int d = a % 15;
 
-		if (b == 0) {
-			std::cout << "wwA ";
+		if (d == 0) {
+			std::cout << "naM zeeG wwA";
 		}
-		if (c == 0) {
+		else if (c == 0) {
 			std::cout << "zeeG ";
 		}
-		if (d == 0) {
+		else if (b == 0) {
 			std::cout << "naM ";
 		}
 
 	}
-
 
 }
