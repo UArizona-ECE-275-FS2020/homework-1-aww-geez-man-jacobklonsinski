@@ -53,7 +53,6 @@ namespace C137{
 		if (d == 0) {
 			std::cout << "Man ";
 		}
-
 	}
 
 }
